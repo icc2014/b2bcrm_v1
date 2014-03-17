@@ -1,0 +1,6 @@
+/* CSS Document */
+form { color:#555;}
+.dselect { width:200px; height:25px; color:#444; line-height:25px; border:1px solid #ccc;}
+
+.input {width:200px;height:30px; line-height:30px; border:1px solid #ccc; background-color:#efefef;}
+.no_border_table { border-bottom:none;}
