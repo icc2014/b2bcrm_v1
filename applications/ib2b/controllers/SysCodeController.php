@@ -4,7 +4,6 @@ class SysCodeController extends BaseController
 {
 	protected $layout = 'back_end_v1.sys_layouts.main';
 	
-	
 	public function index()
 	{
 		/*得到用户列表*/
@@ -12,7 +11,6 @@ class SysCodeController extends BaseController
 		
 		//得到项目ID
 		$project_list = AppProject::getProjectList();
-		
 		
 		
 		/*得到礼品列表*/
@@ -24,14 +22,11 @@ class SysCodeController extends BaseController
 	//添加数据
 	public function add()
 	{
-		
-		
 		$title = Input::get('title');
 		$user = new AppCodes;
 		$user->codes = $title;
 		$user->save();
   		return Redirect::to('codes');
-
 	
 	}
 	
@@ -45,10 +40,6 @@ class SysCodeController extends BaseController
 		exit;
 	
 	}
-	
-	
-	
-	
 	
 	
 }
